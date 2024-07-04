@@ -4,11 +4,11 @@ import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
-import logging
+
 from Pages.home_page import HomePage
 from Pages.search_results_page import SearchResultsPage
 from Config.config import TestData
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+
 @pytest.fixture(scope="module")
 def driver():
     # Configure Chrome to emulate a mobile device
