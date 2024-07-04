@@ -4,9 +4,9 @@ from Pages.base_page import BasePage
 from selenium.webdriver.common.by import By
 
 class HomePage(BasePage):
-    search_button = (By.XPATH, "//a[@href='/search']")
-    input_search = (By.XPATH, "//input[@type='search']")
-    select_search_text = (By.XPATH, "//p[@class='CoreText-sc-1txzju1-0 bqCGPR']")
+    search_button = (By.XPATH,"//a[@href='/search']")
+    input_search = (By.XPATH,"//input[@type='search']")
+    select_search_text = (By.XPATH,"//p[@class='CoreText-sc-1txzju1-0 bqCGPR']")
 
 
     def __init__(self, driver):
